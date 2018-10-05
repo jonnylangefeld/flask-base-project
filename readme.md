@@ -1,6 +1,11 @@
 # This is the base sceleton for a Python Flask app
 
-To use this sceleton, just clone it, `cd` into it, `rm -rf .git`, remove the parts not needed and `git init`
+To use this sceleton, just 
+* `git clone https://github.com/jonnylangefeld/flask-base-project.git`
+* `cd flask-base-project`
+* `rm -rf .git`
+* remove the parts not needed
+* `git init`
 
 ## Steps to run the app locally:
 
