@@ -1,11 +1,13 @@
 # This is the base sceleton for a Python Flask app
 
 To use this sceleton, just 
-* `git clone https://github.com/jonnylangefeld/flask-base-project.git`
-* `cd flask-base-project`
-* `rm -rf .git`
+* fork this repo
+* clone this repo
 * remove the parts not needed
-* `git init`
+
+## Prerequisites:
+
+* docker is installed 
 
 ## Steps to run the app locally:
 
@@ -28,12 +30,12 @@ The following screenshot helps to configure testing in pycharm:
 
 ## Api Documentation:
 
-<details><summary><b>Sample API request: </b><code>GET /api/endpoint/&#60;string:variable&#62;</code></summary>
+<details><summary><b>Sample API request: </b><code>GET /api/&#60;string:variable&#62;</code></summary>
 <p>
 
 This an endpoint of the api.
 
-**Endpoint**: `GET /api/endpoint/<string:variable>`
+**Endpoint**: `GET /api/<string:variable>`
 
 **Return constraints:**
 

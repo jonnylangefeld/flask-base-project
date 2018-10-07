@@ -26,3 +26,19 @@ def test_home_page(test_client):
     response = test_client.get('/')
     assert response.mimetype == 'text/html'
     assert response.status_code == 200
+
+
+def test_api(test_client):
+    """Test api"""
+    response = test_client.get('/api')
+    assert response.mimetype == 'application/json'
+    assert response.status_code == 200
+    assert response.json == {"Hi there": "This is a sample response"}
+
+
+def test_api_variable(test_client):
+    """Test api variable"""
+    response = test_client.get('/api/test')
+    assert response.mimetype == 'application/json'
+    assert response.status_code == 200
+    assert response.json == {"You entered variable:": "test"}
